@@ -29,7 +29,7 @@ export default function Blog({ posts }) {
         {posts.map(post => (
           <li key={post.slug}>
             <Link href={`/blog/${post.slug}`}>
-              {post.title} ({post.date})
+              {post.title} | {post.date}
             </Link>
           </li>
         ))}
