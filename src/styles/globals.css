@@ -12,8 +12,20 @@
   color: #fff; 
 }
 
-body {
+html, body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Clash Display', 'Montserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+
+.blog-link {
+  font-family: 'Fira Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
 }

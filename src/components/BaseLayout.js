@@ -9,7 +9,7 @@ export default function BaseLayout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <div className="relative w-screen h-screen flex flex-col sm:justify-center items-center bg-neutral-900 text-gray-100">
-                <header className="z-10 sm:absolute top-0 left-0 w-screen flex justify-between items-center px-10 pt-8 box-border">
+                <header className="z-10 sm:absolute top-0 left-0 w-screen flex justify-between items-center px-10 pt-8 box-border h-[15vh]">
                     <div className="flex items-center gap-2">
                         <Link href="/" passHref>
                             <div className="w-14 h-14 rounded-full bg-neutral-800 flex items-center justify-center shadow-md cursor-pointer overflow-hidden">
@@ -44,7 +44,7 @@ export default function BaseLayout({ children }) {
                         </Link>
                     </div>
                 </header>
-                <section className="z-10 bg-neutral-800 sm:rounded-2xl shadow-lg px-14 py-10 min-w-full sm:min-w-[60vw] min-h-[60vh] sm:min-h-[60vh] mt-12 sm:mt-0">
+                <section className="z-10 bg-neutral-800 sm:rounded-2xl shadow-lg px-14 py-10 min-w-full sm:min-w-[60vw] min-h-[85vh] sm:min-h-[60vh] mt-8 sm:mt-0">
                     {children}
                 </section>
             </div>

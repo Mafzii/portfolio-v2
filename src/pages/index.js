@@ -7,7 +7,7 @@ export default function Home() {
       <Head>
         <title>Mustafa Afzal</title>
       </Head>
-      <h1 className="text-4xl font-bold mb-4 tracking-tight text-neutral-200">Hello, I'm Mustafa</h1>
+      <h1 className="text-4xl font-bold mb-4 tracking-tight text-neutral-200">hello there</h1>
       <p className="text-lg mb-8 text-gray-300 opacity-85">
         Welcome to my portfolio.<br />Frontend developer, designer, and creator.
       </p>
