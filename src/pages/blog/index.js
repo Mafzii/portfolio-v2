@@ -29,7 +29,7 @@ export default function Blog({ posts }) {
       <Head>
         <title>Blog - Mustafa Afzal</title>
       </Head>
-      <h1 className="text-3xl font-bold mb-6 text-neutral-200 text-center">
+      <h1 className="text-3xl font-bold mb-6 text-neutral-200">
         Blog
       </h1>
       <ul className="space-y-4">
@@ -37,7 +37,7 @@ export default function Blog({ posts }) {
           <li key={post.slug}>
             <Link
               href={`/blog/${post.slug}`}
-              className="block px-5 py-4 text-lg font-medium text-neutral-100 rounded-lg transition-colors duration-200 hover:text-indigo-400 hover:underline"
+              className="inline-block underline py-4 text-lg font-medium text-neutral-100 rounded-lg transition-colors duration-200 hover:text-indigo-400 hover:underline w-auto"
             >
               <div className="flex flex-col">
                 <span className="font-semibold">{post.title} - <span className="text-md mt-1">

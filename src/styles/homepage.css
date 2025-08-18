@@ -5,7 +5,7 @@
   width: 200vw;
   height: 40vh; /* Make it a bar */
   pointer-events: none;
-  background: linear-gradient(135deg, var(--color-neutral-800) 0%, var(--color-neutral-100) 60%, transparent 100%);
+  background: linear-gradient(135deg, var(--color-neutral-800) 0%, var(--color-neutral-500) 60%, transparent 100%);
   opacity: 0.28;  
   filter: blur(100px);
   border-radius: 100px; /* Soft edges */
