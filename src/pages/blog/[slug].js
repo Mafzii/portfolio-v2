@@ -48,7 +48,7 @@ export default function Post({ title, date, contentHtml }) {
       </Head>
       <div className="flex flex-col justify-center items-center min-h-screen bg-neutral-900 text-gray-100">
         <section className="bg-neutral-800 rounded-2xl shadow-lg px-10 py-10 max-w-lg w-full text-center">
-          <h1 className="text-3xl font-bold mb-4 text-neutral-200">{slug}</h1>
+          <h1 className="text-4xl font-bold mb-4 text-neutral-200">{slug}</h1>
           <p className="text-lg text-gray-300 opacity-85">
             Blog post content for <strong>{slug}</strong> goes here.
           </p>

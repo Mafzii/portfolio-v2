@@ -7,22 +7,35 @@
   --font-mono: var(--font-geist-mono);
 }
 
-::selection {
-  background: rgb(163, 71, 71);
-  color: #fff; 
+:root {
+  --cool-red: rgb(163, 71, 71);
 }
 
-html, body {
+.red-hover:hover {
+  color: var(--cool-red)
+}
+
+::selection {
+  background: var(--cool-red);
+  color: #fff;
+}
+
+html,
+body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Clash Display', 'Montserrat', Arial, Helvetica, sans-serif;
   letter-spacing: 0.01em;
 }
-
 
 .blog-link {
   font-family: 'Fira Mono', monospace;
