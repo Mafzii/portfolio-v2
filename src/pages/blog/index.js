@@ -29,7 +29,7 @@ export default function Blog({ posts }) {
       <Head>
         <title>Blog - Mustafa Afzal</title>
       </Head>
-      <h1 className="text-4xl font-bold mb-6 text-neutral-200">
+      <h1 className="text-4xl font-bold mb-4 text-neutral-200">
         blog
       </h1>
       <ul className="space-y-4">

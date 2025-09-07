@@ -46,7 +46,7 @@ export default function BaseLayout({ children }) {
                         </Link>
                     </div>
                 </header>
-                <section className="z-10 bottom-0 right-0 bg-neutral-800/60 backdrop-blur-sm sm:rounded-2xl shadow-lg p-10 min-w-full h-full sm:min-h-[70vh] sm:mb-[10vh]">
+                <section className="z-10 bottom-0 right-0 bg-neutral-800/60 backdrop-blur-sm sm:rounded-2xl shadow-lg p-10 min-w-full h-full sm:min-h-[65vh] sm:mb-[15vh] sm:min-w-[70vw] sm:max-w-[70vw] overflow-scroll text-wrap">
                     {children}
                 </section>
             </div>
