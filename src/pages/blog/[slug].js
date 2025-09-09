@@ -1,10 +1,14 @@
 import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
-import { remark } from 'remark';
-import html from 'remark-html';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import BaseLayout from '@/components/BaseLayout';
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeHighlight from 'rehype-highlight'
+import styles from '@/styles/markdown.module.css';
+import remarkHighlightjs from 'remark-highlight.js';
+import 'highlight.js/styles/atom-one-dark.css';
 
 export async function getStaticPaths() {
   const files = fs.readdirSync('posts');
@@ -25,35 +29,28 @@ export async function getStaticProps({ params }) {
   const markdown = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8');
   const { data, content } = matter(markdown);
 
-  const processed = await remark().use(html).process(content);
-  const contentHtml = processed.toString();
-
   return {
     props: {
       title: data.title,
       date: data.date,
-      contentHtml,
+      content,
     },
   };
 }
 
-export default function Post({ title, date, contentHtml }) {
+export default function Post({ title, date, content }) {
   const router = useRouter();
   const { slug } = router.query;
 
   return (
-    <>
+    <BaseLayout>
       <Head>
-        <title>{slug} - Blog - Mustafa Afzal</title>
+        <title>{title} - Blog - Mustafa Afzal</title>
       </Head>
-      <div className="flex flex-col justify-center items-center min-h-screen bg-neutral-900 text-gray-100">
-        <section className="bg-neutral-800 rounded-2xl shadow-lg px-10 py-10 max-w-lg w-full text-center">
-          <h1 className="text-4xl font-bold mb-4 text-neutral-200">{slug}</h1>
-          <p className="text-lg text-gray-300 opacity-85">
-            Blog post content for <strong>{slug}</strong> goes here.
-          </p>
-        </section>
+      <h1 className="text-4xl font-bold mb-4">{title || slug}</h1>
+      <div className={styles["markdown-body"]}>
+        <ReactMarkdown children={content} remarkPlugins={[remarkGfm, remarkHighlightjs]} />
       </div>
-    </>
+    </BaseLayout>
   );
 }

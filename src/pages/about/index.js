@@ -7,8 +7,8 @@ export default function About() {
       <Head>
         <title>About - Mustafa Afzal</title>
       </Head>
-      <h1 className="text-4xl font-bold mb-4 text-neutral-200">about me</h1>
-      <p className="text-lg text-gray-300 opacity-85">
+      <h1 className="text-4xl font-bold mb-4">about me</h1>
+      <p className="text-lg opacity-85">
         Hi, I'm Mustafa Afzal.<br />
         I'm a chill guy.<br />
         Welcome to my portfolio!

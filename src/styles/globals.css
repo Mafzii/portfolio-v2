@@ -42,3 +42,9 @@ h6 {
   font-size: 1.1rem;
   font-weight: 400;
 }
+
+code {
+  background-color: #e0e0e0; /* Slightly darker grey for inline code */
+  padding: 2px 4px;
+  border-radius: 3px;
+}
