@@ -68,14 +68,22 @@ export default function Post({ title, date, content }) {
         </button>
         <h1 className="text-4xl font-bold mb-4 text-neutral-50">{title || slug}</h1>
         <div className={styles["markdown-body"]}>
-          <ReactMarkdown children={content} remarkPlugins={[remarkGfm, remarkHighlightjs]} />
+          <ReactMarkdown
+            children={content}
+            remarkPlugins={[remarkGfm, remarkHighlightjs]}
+            components={{
+              a: ({node, ...props}) => (
+                <a {...props} target="_blank" rel="noopener noreferrer">{props.children}</a>
+              )
+            }}
+          />
         </div>
       </div>
     </>
   )
 
   return fullScreen ? (
-    <div className="fixed z-10 bg-neutral-800/60 backdrop-blur-sm shadow-lg p-10 min-w-full h-full overflow-scroll text-wrap">
+    <div className="fixed z-10 bg-neutral-800/60 backdrop-blur-sm shadow-lg p-10 max-w-full min-w-full h-full overflow-scroll text-wrap">
       {pageContent}
     </div>
   ) : (
