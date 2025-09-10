@@ -69,14 +69,15 @@ export default function Post({ title, date, content }) {
         <h1 className="text-4xl font-bold mb-4 text-neutral-50">{title || slug}</h1>
         <div className={styles["markdown-body"]}>
           <ReactMarkdown
-            children={content}
             remarkPlugins={[remarkGfm, remarkHighlightjs]}
             components={{
-              a: ({node, ...props}) => (
+              a: ({ node, ...props }) => (
                 <a {...props} target="_blank" rel="noopener noreferrer">{props.children}</a>
               )
             }}
-          />
+          >
+            {content}
+          </ReactMarkdown>
         </div>
       </div>
     </>

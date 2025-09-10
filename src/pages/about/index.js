@@ -9,8 +9,8 @@ export default function About() {
       </Head>
       <h1 className="text-4xl font-bold mb-4">about me</h1>
       <p className="text-lg opacity-85">
-        Hi, I'm Mustafa Afzal.<br />
-        I'm a chill guy.<br />
+        Hi, Im Mustafa Afzal.<br />
+        Im a chill guy.<br />
         Welcome to my portfolio!
       </p>
     </BaseLayout>
