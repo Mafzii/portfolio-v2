@@ -1,0 +1,9 @@
+{
+  "slug": "weather-app",
+  "name": "Weather App",
+  "date": "2024-12-10",
+  "description": "A simple weather dashboard with live data and beautiful UI.",
+  "tech": ["React", "Tailwind CSS", "OpenWeatherMap API"],
+  "link": "",
+  "repo": "https://github.com/Mafzii/weather-app"
+}

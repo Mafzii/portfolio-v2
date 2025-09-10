@@ -9,7 +9,7 @@ export default function BaseLayout({ children, additional }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <div className="relative w-screen h-screen flex flex-col sm:justify-center items-center bg-neutral-900 text-gray-100">
-                <header className="z-10 top-0 left-0 w-screen flex justify-between items-center box-border h-[20vh] max-h-[20vh] sm:max-h-full p-10">
+                <header className="z-10 top-0 left-0 w-screen flex justify-between items-center box-border h-[20vh] max-h-[20vh] sm:max-h-full p-6 sm:p-10">
                     <div className="flex items-center gap-2">
                         <Link href="/" passHref>
                             <div className="w-14 h-14 rounded-full bg-neutral-800 flex items-center justify-center shadow-md cursor-pointer overflow-hidden">
@@ -38,8 +38,8 @@ export default function BaseLayout({ children, additional }) {
                         </div>
                     </div>
                     <div className="flex gap-4">
-                        <Link href="/about">
-                            <div className="bg-neutral-800 rounded-lg px-5 py-2 font-medium text-[1.05rem] shadow-md transition-colors duration-200 hover:bg-neutral-500 hover:text-white">About</div>
+                        <Link href="/projects">
+                            <div className="bg-neutral-800 rounded-lg px-5 py-2 font-medium text-[1.05rem] shadow-md transition-colors duration-200 hover:bg-neutral-500 hover:text-white">Projects</div>
                         </Link>
                         <Link href="/blog">
                             <div className="bg-neutral-800 rounded-lg px-5 py-2 font-medium text-[1.05rem] shadow-md transition-colors duration-200 hover:bg-neutral-500 hover:text-white">Blog</div>

@@ -7,16 +7,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/*
+not sure if i want red theme or not
 :root {
   --cool-red: rgb(163, 71, 71);
 }
-
 .red-hover:hover {
   color: var(--cool-red)
-}
+} */
 
 ::selection {
-  background: var(--cool-red);
+  background: var(--color-slate-600);
   color: #fff;
 }
 
