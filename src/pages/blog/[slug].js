@@ -7,7 +7,6 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import styles from '@/styles/markdown.module.css';
 import remarkHighlightjs from 'remark-highlight.js';
-import 'highlight.js/styles/atom-one-dark.css';
 import { useState } from 'react';
 
 export async function getStaticPaths() {

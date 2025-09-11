@@ -51,7 +51,7 @@ export default function Blog({ posts }) {
                 className="block py-4 px-4 rounded-lg transition-colors duration-200 hover:bg-neutral-800/60 focus:bg-neutral-800/80"
               >
                 <div className="flex flex-col">
-                  <span className="font-semibold text-lg mb-1">{post.title}</span>
+                  <span className="font-semibold text-lg mb-1 underline underline-offset-2">{post.title}</span>
                   <span className="text-sm text-neutral-400">{post.date}</span>
                 </div>
               </Link>

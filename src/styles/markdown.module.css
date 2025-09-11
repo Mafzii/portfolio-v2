@@ -65,10 +65,10 @@
   background: var(--color-zinc-800);
 }
 .markdown-body a {
-  color: #60a5fa; /* Tailwind blue-400 */
+  color: var(--color-blue-400);
   text-decoration: underline;
   transition: color 0.2s;
 }
 .markdown-body a:hover {
-  color: #2563eb; /* Tailwind blue-600 */
+  color: var(--color-blue-600);
 }
