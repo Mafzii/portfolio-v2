@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }) {
         width={56}
         height={56}
         alt="Background Image"
-        className="z-10 fixed bottom-0 top-auto w-full h-full pointer-events-none"
+        className="z-10 fixed object-cover top-auto w-full min-h-[1080px] max-h-[1080px] pointer-events-none"
       />
       {/* <div className="z-10 wave-bg-anim" /> */}
       <Component {...pageProps} />
