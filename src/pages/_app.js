@@ -8,10 +8,10 @@ export default function App({ Component, pageProps }) {
     <>
       <Image
         src={`${basePath}/backdrop.jpg`}
-        width={56}
-        height={56}
+        width={1920}
+        height={1080}
         alt="Background Image"
-        className="z-10 fixed object-cover top-auto w-full min-h-[1080px] max-h-[1080px] pointer-events-none"
+        className="z-10 fixed object-cover top-auto w-full min-h-screen max-h-screen pointer-events-none"
       />
       {/* <div className="z-10 wave-bg-anim" /> */}
       <Component {...pageProps} />
