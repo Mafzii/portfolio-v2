@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
 import "@/styles/homepage.css";
 import Image from 'next/image';
+import { basePath } from '../utils/constants';
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Image
-        src="/backdrop.jpg"
+        src={`${basePath}/backdrop.jpg`}
         width={56}
         height={56}
         alt="Background Image"
