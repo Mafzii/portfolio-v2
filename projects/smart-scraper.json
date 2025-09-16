@@ -1,0 +1,9 @@
+{
+  "slug": "smart-scraper",
+  "name": "Smart Scraper",
+  "date": "2025-09-08",
+  "description": "A Python-based web scraper for extracting structured data from websites. Designed for flexibility and automation.",
+  "tech": ["Python", "Requests", "BeautifulSoup", "Automation"],
+  "link": "",
+  "repo": "https://github.com/Mafzii/smart-scraper"
+}

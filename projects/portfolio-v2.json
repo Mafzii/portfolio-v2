@@ -3,7 +3,7 @@
   "name": "Portfolio v2",
   "date": "2025-08-01",
   "description": "A modern, responsive portfolio built with Next.js, Tailwind CSS, and Markdown-powered blog.",
-  "tech": ["Next.js", "React", "Tailwind CSS", "Markdown"],
+  "tech": ["Next.js", "React", "Tailwind CSS", "Markdown Rendering", "SSG"],
   "link": "https://mafzii.com",
   "repo": "https://github.com/Mafzii/portfolio-v2"
 }

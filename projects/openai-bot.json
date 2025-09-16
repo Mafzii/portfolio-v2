@@ -1,9 +1,0 @@
-{
-  "slug": "openai-bot",
-  "name": "OpenAI Chatbot",
-  "date": "2025-06-15",
-  "description": "A conversational AI chatbot using OpenAI API, deployed on Vercel.",
-  "tech": ["OpenAI", "Node.js", "Vercel"],
-  "link": "https://openai-bot-demo.com",
-  "repo": "https://github.com/Mafzii/openai-bot"
-}

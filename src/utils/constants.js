@@ -1,1 +1,1 @@
-export const basePath = "portfolio-v2";
+export const basePath = "/portfolio-v2";

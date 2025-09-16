@@ -1,0 +1,9 @@
+{
+  "slug": "particle-system",
+  "name": "Particle System",
+  "date": "2024-02-11",
+  "description": "A simple randomly generated particle system visualizer. Great for learning about animation and simulation.",
+  "tech": ["JavaScript", "Canvas API"],
+  "link": "",
+  "repo": "https://github.com/Mafzii/particle-system"
+}
