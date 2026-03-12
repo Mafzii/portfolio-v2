@@ -103,16 +103,31 @@ code.hljs {
 
 @import "tailwindcss";
 
+:root {
+  --background: #050816;
+  --foreground: #f5f1ea;
+  --copy-measure: 68ch;
+}
+
 ::selection {
   background: var(--color-slate-600);
   color: #fff;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Space Grotesk', Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
 }
 
 h1,
@@ -121,14 +136,77 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Clash Display', 'Montserrat', Arial, Helvetica, sans-serif;
-  letter-spacing: 0.01em;
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+  text-wrap: balance;
+  font-weight: 600;
+}
+
+p,
+li {
+  overflow-wrap: anywhere;
 }
 
 .blog-link {
-  font-family: 'Fira Mono', monospace;
+  font-family: var(--font-mono), monospace;
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+a,
+button {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.type-kicker {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(245, 241, 234, 0.68);
+}
+
+.type-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  text-wrap: balance;
+}
+
+.type-nav {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.type-meta {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(229, 231, 235, 0.62);
+}
+
+.type-body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: rgba(245, 241, 234, 0.9);
+  max-width: none;
+  overflow-wrap: anywhere;
+}
+
+.type-lead {
+  font-size: clamp(1.05rem, 0.95rem + 0.4vw, 1.2rem);
+  line-height: 1.95;
+  color: rgba(245, 241, 234, 0.88);
+  max-width: none;
+  overflow-wrap: anywhere;
 }
 
 /* Hide scrollbars for all elements */

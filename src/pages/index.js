@@ -7,11 +7,14 @@ export default function Home() {
       <Head>
         <title>Mustafa Afzal</title>
       </Head>
-      <h1 className="text-4xl font-bold mb-4">hello there</h1>
-      <p className="text-lg opacity-85">
-        Welcome to my portfolio.<br />Frontend developer, designer, and creator.
-        <br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!
-      </p>
+      <div className="max-w-3xl space-y-6">
+        <p className="type-kicker">Mustafa Afzal</p>
+        <h1 className="type-display text-5xl sm:text-7xl text-neutral-50">hello there</h1>
+        <p className="type-lead">
+          Welcome to my portfolio.<br />Frontend developer, designer, and creator.
+          <br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!<br /><br />I have worked on a bunch of interesting projects—scroll down to see more!
+        </p>
+      </div>
     </BaseLayout>
   );
 }

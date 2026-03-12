@@ -1,11 +1,12 @@
 import "@/styles/globals.css";
 import "@/styles/homepage.css";
-import Image from 'next/image';
-import { basePath } from '../utils/constants';
+import Image from "next/image";
+import { bodyFont, displayFont, monoFont } from "@/styles/fonts";
+import { basePath } from "../utils/constants";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} min-h-screen`}>
       <Image
         src={`${basePath}/backdrop.jpg`}
         width={1920}
@@ -15,6 +16,6 @@ export default function App({ Component, pageProps }) {
       />
       {/* <div className="z-10 wave-bg-anim" /> */}
       <Component {...pageProps} />
-    </>
+    </div>
   );
 }

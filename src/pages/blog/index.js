@@ -40,7 +40,8 @@ export default function Blog({ posts }) {
         <title>Blog - Mustafa Afzal</title>
       </Head>
       <div className="flex flex-col h-full">
-        <h1 className="text-4xl font-bold mb-4 flex-shrink-0">
+        <p className="type-kicker mb-3 flex-shrink-0">Writing</p>
+        <h1 className="type-display text-5xl sm:text-6xl mb-6 flex-shrink-0 text-neutral-50">
           blog
         </h1>
         <ul className="flex-1 overflow-y-scroll pr-2">
@@ -48,11 +49,11 @@ export default function Blog({ posts }) {
             <li className="m-0" key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="block py-4 px-4 rounded-lg transition-colors duration-200 hover:bg-neutral-800/60 focus:bg-neutral-800/80"
+                className="block py-5 px-5 rounded-2xl transition-colors duration-200 hover:bg-neutral-800/60 focus:bg-neutral-800/80"
               >
-                <div className="flex flex-col">
-                  <span className="font-semibold text-lg mb-1 underline underline-offset-2">{post.title}</span>
-                  <span className="text-sm text-neutral-400">{post.date}</span>
+                <div className="flex flex-col gap-2">
+                  <span className="type-nav text-2xl text-neutral-100 underline underline-offset-4">{post.title}</span>
+                  <span className="type-meta">{post.date}</span>
                 </div>
               </Link>
             </li>

@@ -7,12 +7,15 @@ export default function About() {
       <Head>
         <title>About - Mustafa Afzal</title>
       </Head>
-      <h1 className="text-4xl font-bold mb-4">about me</h1>
-      <p className="text-lg opacity-85">
-        Hi, Im Mustafa Afzal.<br />
-        Im a chill guy.<br />
-        Welcome to my portfolio!
-      </p>
+      <div className="max-w-3xl space-y-5">
+        <p className="type-kicker">About</p>
+        <h1 className="type-display text-5xl sm:text-6xl text-neutral-50">about me</h1>
+        <p className="type-body">
+          Hi, Im Mustafa Afzal.<br />
+          Im a chill guy.<br />
+          Welcome to my portfolio!
+        </p>
+      </div>
     </BaseLayout>
   );
 }
