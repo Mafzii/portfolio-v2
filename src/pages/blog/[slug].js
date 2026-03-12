@@ -50,7 +50,7 @@ export default function Post({ title, date, content }) {
       <div className="relative">
         <button
           onClick={() => setFullScreen(f => !f)}
-          className="sticky top-1 right-0 float-right z-50 bg-neutral-800 hover:bg-neutral-500 rounded-full p-2 shadow transition-colors"
+          className="sticky top-1 right-0 float-right z-50 bg-neutral-800/90 hover:bg-neutral-500 rounded-full p-2 shadow ring-1 ring-white/8 transition-colors"
           type="button"
         >
           {fullScreen ? (
@@ -65,7 +65,7 @@ export default function Post({ title, date, content }) {
             </svg>
           )}
         </button>
-        <h1 className="text-4xl font-bold mb-4 text-neutral-50">{title || slug}</h1>
+        <h1 className="type-display text-5xl sm:text-6xl mb-8 text-neutral-50">{title || slug}</h1>
         <div className={styles["markdown-body"]}>
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkHighlightjs]}
@@ -83,7 +83,7 @@ export default function Post({ title, date, content }) {
   )
 
   return fullScreen ? (
-    <div className="fixed z-10 bg-neutral-800/60 backdrop-blur-sm shadow-lg p-10 max-w-full min-w-full h-full overflow-scroll text-wrap">
+    <div className="fixed z-10 bg-neutral-900/75 backdrop-blur-md shadow-lg p-8 sm:p-10 max-w-full min-w-full h-full overflow-scroll text-wrap ring-1 ring-white/8">
       {pageContent}
     </div>
   ) : (
