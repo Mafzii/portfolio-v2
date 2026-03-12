@@ -1,4 +1,4 @@
-# portfolio-v2
+# portfolio
 
 Personal portfolio site built with Next.js and exported as a static site for GitHub Pages.
 
@@ -13,9 +13,11 @@ npm run dev
 
 The app is configured as a project site and uses the repository base path:
 
-- Repository: `Mafzii/portfolio-v2`
-- Base path: `/portfolio-v2`
-- GitHub Pages URL: `https://mafzii.github.io/portfolio-v2/`
+- Repository: `Mafzii/portfolio`
+- Base path: `/portfolio`
+- GitHub Pages URL: `https://mafzii.github.io/portfolio/`
+
+To use that exact GitHub Pages URL on a project site, the repository itself should also be renamed to `portfolio` on GitHub.
 
 ## Production build
 
